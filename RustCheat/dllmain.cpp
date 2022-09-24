@@ -25,7 +25,7 @@ void mainThread(LPVOID lpParam) {
 
 bool __stdcall DllMain(HMODULE hModule, DWORD dwCallReason,LPVOID lpReserved) {
     if (dwCallReason == DLL_PROCESS_ATTACH) {
-        if (HANDLE pHandle = CreateThread(nullptr, NULL, reinterpret_cast<LPTHREAD_START_ROUTINE>(mainThread), nullptr, NULL, nullptr))
+        if (HANDLE pHandle = CreateThread(nullptr, NULL, reinterpret_cast<LPTHREAD_START_ROUTINE>(mainThread), hModule, NULL, nullptr))
             CloseHandle(pHandle);
     }
 

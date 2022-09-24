@@ -1,5 +1,6 @@
 # RustCheat
 - A Internal Rust Cheat meant for Cracked Rust
+- the Coding Style is CamelCase - https://en.wikipedia.org/wiki/Camel_case
 
 ## Credits
 
