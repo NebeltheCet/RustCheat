@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="Hooks\Hooks.cpp" />
+    <ClCompile Include="SDK\Il2CPP\Dissector.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Includes.hpp" />
+    <ClInclude Include="Hooks\Hooks.hpp" />
+    <ClInclude Include="SDK\Detours\detours.h" />
+    <ClInclude Include="SDK\Il2CPP\Dissector.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="SDK\Detours\detours.lib" />
+  </ItemGroup>
+</Project>
